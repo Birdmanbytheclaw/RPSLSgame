@@ -1,0 +1,9 @@
+C:\CODE\week 3\RPSLS\RPSLSgameFile\RPSLSgameFile\bin\Debug\RPSLSgameFile.exe.config
+C:\CODE\week 3\RPSLS\RPSLSgameFile\RPSLSgameFile\bin\Debug\RPSLSgameFile.exe
+C:\CODE\week 3\RPSLS\RPSLSgameFile\RPSLSgameFile\bin\Debug\RPSLSgameFile.pdb
+C:\CODE\week 3\RPSLS\RPSLSgameFile\RPSLSgameFile\obj\Debug\RPSLSgameFile.csprojAssemblyReference.cache
+C:\CODE\week 3\RPSLS\RPSLSgameFile\RPSLSgameFile\obj\Debug\RPSLSgameFile.exe
+C:\CODE\week 3\RPSLS\RPSLSgameFile\RPSLSgameFile\obj\Debug\RPSLSgameFile.pdb
+C:\CODE\A final cut\week 02\Projects\RPSLSgameFile\RPSLSgameFile\obj\Debug\RPSLSgameFile.csprojAssemblyReference.cache
+C:\CODE\A final cut\week 02\Projects\RPSLSgameFile\RPSLSgameFile\obj\Debug\RPSLSgameFile.exe
+C:\CODE\A final cut\week 02\Projects\RPSLSgameFile\RPSLSgameFile\obj\Debug\RPSLSgameFile.pdb
