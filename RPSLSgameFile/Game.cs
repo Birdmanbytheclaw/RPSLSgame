@@ -37,6 +37,28 @@ namespace RPSLSgameFile
                 player2 = new Human();
             }
         }
+        public void CheckingForRule()
+        {
+            Console.WriteLine("Do you know the rules? Hit [1] for yes or [2] for no");
+            string userinput = Console.ReadLine();
+            {
+                if (userinput == "1")
+                {
+                    RunGame();
+                }
+                else if (userinput == "2")
+                {
+                    Console.WriteLine("Rules: Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock");
+                    RunGame();
+                }
+                else ();
+
+                {
+                    Console.WriteLine("You did not select a valid option. Please choose again");
+                    CheckingForRule();
+                }
+            }
+        }
         public void RunGame()
         {
             string UserInput = ChooseNumberOfPlayers();
