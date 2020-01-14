@@ -51,7 +51,7 @@ namespace RPSLSgameFile
                     Console.WriteLine("Rules: Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock");
                     RunGame();
                 }
-                else ();
+                else
 
                 {
                     Console.WriteLine("You did not select a valid option. Please choose again");
