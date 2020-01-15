@@ -18,6 +18,7 @@ namespace RPSLSgameFile
             {
                ChooseGesture();
              }
+          
            
         }
         public override void SetName()
