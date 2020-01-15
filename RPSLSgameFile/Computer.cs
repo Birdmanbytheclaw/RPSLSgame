@@ -8,13 +8,7 @@ namespace RPSLSgameFile
 {
     class Computer : Player
     {
-        public override void ChooseGesture()
-        {
-            //Random
-            Random random = new Random();
-        }
-
-        public override void SetName()
+     public override void SetName()
         {
             throw new NotImplementedException();
         }

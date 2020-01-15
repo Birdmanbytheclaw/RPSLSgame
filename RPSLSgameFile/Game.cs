@@ -10,6 +10,7 @@ namespace RPSLSgameFile
     {
         Player player1;
         Player player2;
+        
 
         public string ChooseNumberOfPlayers()
         {
@@ -22,16 +23,16 @@ namespace RPSLSgameFile
         {
             if (NumberOfPlayers == "0")
             {
-                player1  = new Computer();
+                player1 = new Computer();
                 player2 = new Computer();
             }
 
-         else if(NumberOfPlayers == "1")
+            else if (NumberOfPlayers == "1")
             {
                 player1 = new Human();
                 player2 = new Computer();
             }
-        else if(NumberOfPlayers == "2")
+            else if (NumberOfPlayers == "2")
             {
                 player1 = new Human();
                 player2 = new Human();
@@ -63,8 +64,108 @@ namespace RPSLSgameFile
         {
             string UserInput = ChooseNumberOfPlayers();
             SetPlayers(UserInput);
-            player1.ChooseGesture();
-            player2.ChooseGesture(); 
-        }
-    }
+            {
+            Console.WriteLine("Play a gesture! Choose between Rock(1), Paper(2), Scissors(3), Lizard(4), Spock(5)");
+                player1.gesture = Int32.Parse(Console.ReadLine());
+            while (player1.Score < 2 && player2.Score < 2)
+            {
+                while (player1.gesture == 1)
+                {
+                    Console.WriteLine("Player 1 chose Rock");
+                    if (player1.gesture == player2.gesture)
+                    {
+                        Console.WriteLine("Draw! Choose Again!");
+                    }
+                    if (player2.gesture == 3 && player2.gesture == 4)
+                    {
+                        Console.WriteLine("Player 1 earns a point!");
+                        player1.Score++;
+                    }
+                    if (player2.gesture == 2 && player2.gesture == 5)
+                    {
+                        Console.WriteLine("Player 2 earns a point!");
+                        player2.Score++;
+                    }
+                }
+                while (player1.gesture == 2)
+                {
+                    Console.WriteLine("Player 1 chose Paper");
+                    if (player1.gesture == player2.gesture)
+                    {
+                        Console.WriteLine("Draw! Choose Again!");
+                    }
+                    if (player2.gesture == 1 && player2.gesture == 5)
+                    {
+                        Console.WriteLine("Player 1 earns a point!");
+                        player1.Score++;
+                    }
+                    if (player2.gesture == 3 && player2.gesture == 4)
+                    {
+                        Console.WriteLine("Player 2 earns a point!");
+                        player2.Score++;
+                    }
+                }
+                while (player1.gesture == 3)
+                {
+                    Console.WriteLine("Player 1 chose Scissors");
+                    if (player1.gesture == player2.gesture)
+                    {
+                        Console.WriteLine("Draw! Choose Again!");
+                    }
+                    if (player2.gesture == 2 && player2.gesture == 4)
+                    {
+                        Console.WriteLine("Player 1 earns a point!");
+                        player1.Score++;
+                    }
+                    if (player2.gesture == 1 && player2.gesture == 5)
+                    {
+                        Console.WriteLine("Player 2 earns a point!");
+                        player2.Score++;
+                    }
+                }
+                while (player1.gesture == 4)
+                {
+                    Console.WriteLine("Player 1 chose Lizard");
+                    if (player1.gesture == player2.gesture)
+                    {
+                        Console.WriteLine("Draw! Choose Again!");
+                    }
+                    if (player2.gesture == 2 && player2.gesture == 5)
+                    {
+                        Console.WriteLine("Player 1 earns a point!");
+                        player1.Score++;
+                    }
+                    if (player2.gesture == 1 && player2.gesture == 3)
+                    {
+                        Console.WriteLine("Player 2 earns a point!");
+                        player2.Score++;
+                    }
+                }
+                while (player1.gesture == 5)
+                {
+                    Console.WriteLine("Player 1 chose Spock");
+                    if (player1.gesture == player2.gesture)
+                    {
+                        Console.WriteLine("Draw! Choose Again!");
+                    }
+                    if (player2.gesture == 1 && player2.gesture == 3)
+                    {
+                        Console.WriteLine("Player 1 earns a point!");
+                        player1.Score++;
+                    }
+                    if (player2.gesture == 2 && player2.gesture == 4)
+                    {
+                        Console.WriteLine("Player 2 earns a point!");
+                        player2.Score++;
+                      
+                        } 
+                    }
+                } 
+            }
+            Console.ReadLine();
+        } 
+    } 
 }
+        
+    
+

@@ -8,12 +8,6 @@ namespace RPSLSgameFile
 {
     public class Human : Player
     {
-        public override void ChooseGesture()
-        {
-            Console.WriteLine("Choose Gesture");
-            gesture = (Console.ReadLine);
-        }
-
         public override void SetName()
         {
             throw new NotImplementedException();
