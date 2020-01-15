@@ -15,8 +15,9 @@ namespace RPSLSgameFile
 
         public Player()
         {
-            gestures = new List<int>() {0, 1, 2, 3, 4};
+            gestures = new List<int>() {1, 2, 3, 4, 5};
         }
+        public abstract void ChooseGesture();
 
         
         public abstract void SetName();
